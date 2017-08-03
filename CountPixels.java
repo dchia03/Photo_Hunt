@@ -13,8 +13,7 @@ public class CountPixels {
 	// reads input from test files and initializes variables
 		try{
 			String test = "test2.txt";
-			String fileName = "C:\\Users\\Daniel Chia\\Desktop\\Java Files\\CountPixels\\" + test;
-			File file = new File(fileName);
+			File file = new File(test);
 			frame = new ArrayList<ArrayList<Pixel>>();
 			
 			Scanner sc = new Scanner(file);
@@ -89,13 +88,7 @@ public class CountPixels {
 		}
 		return b;
 	}
-	
-	public void shapeDetect(Blob b) {
-	// check if blob is in a predefined shape
-		int[][] blobFrame = b.toFrame();
 		
-	}
-	
 	public void printBlobs() {
 		for(Blob b: blobs) {
 			System.out.println(b);
